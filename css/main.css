@@ -37,6 +37,11 @@ Primary use:
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf'); 
 }
 
+@font-face {
+  font-family: Patua One;
+  src: url('../fonts/patua one.woff2'); 
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ RS PLUGIN ]*/
@@ -95,7 +100,7 @@ Primary use:
 }
 
 .m1-txt2 {
-  font-family: PlayfairDisplay-Italic;
+  font-family: Patua One;
   font-size: 18px;
   color: #fff;
   line-height: 1;
@@ -106,7 +111,7 @@ Primary use:
 /*//////////////////////////////////////////////////////////////////
 [ L-Text >= 26 ]*/
 .l1-txt1 {
-  font-family: Lato-Hairline;
+  font-family: Patua One;
   font-size: 72px;
   line-height: 1.1;
   color: #fff;
@@ -114,7 +119,7 @@ Primary use:
 }
 
 .l1-txt2 {
-  font-family: PlayfairDisplay-Italic;
+  font-family: Patua One;
   font-size: 120px;
   line-height: 1;
   color: #fff;
