@@ -47,7 +47,7 @@
 </head>
 <body>
 	
-	<video id="myVideo" autoplay muted>
+	<video id="myVideo" autoplay loop muted>
 		<source class="active" src="images/all.mp4" type="video/mp4">
 		<!-- <source class="active" src="images/01_Money_04_2_compressed.mp4" type="video/mp4"> -->
 		<!-- <source src="images/01_Confetti_09_compressed.mp4" type="video/mp4"> -->
@@ -174,25 +174,6 @@
 			timeZone: "Europe/Amsterdam" 
 			// ex:  timeZone: "America/New_York"
 			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script>
-		var myvid = document.getElementById('myVideo');
-		
-		myvid.addEventListener('ended', function(e) {
-			// get the active source and the next video source.
-			// I set it so if there's no next, it loops to the first one
-			var activesource = document.querySelector("#myVideo source.active");
-			var nextsource = document.querySelector("#myVideo source.active + source") || document.querySelector("#myVideo source:first-child");
-			
-			// deactivate current source, and activate next one
-			activesource.className = "";
-			nextsource.className = "active";
-			
-			// update the video source and play
-			myvid.src = nextsource.src;
-			myvid.play();
 		});
 	</script>
 <!--===============================================================================================-->
