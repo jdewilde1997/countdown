@@ -43,7 +43,7 @@
 <body>
 	
 	<video id="myVideo" autoplay loop muted width="100%">
-		<source class="active" src="images/all.mp4" type="video/mp4">
+		<source id="customVideo" src="images/all.mp4" type="video/mp4">
 		<!-- <source class="active" src="images/01_Money_04_2_compressed.mp4" type="video/mp4"> -->
 		<!-- <source src="images/01_Confetti_09_compressed.mp4" type="video/mp4"> -->
 		<!-- <source src="images/01_Money_01_1.mp4" type="video/mp4"> -->
@@ -172,6 +172,12 @@
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
+		
+		function changeVideo(url) {
+			var video = document.getElementById("myVideo");
+			video.src = url;
+			video.play();
+		}
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
